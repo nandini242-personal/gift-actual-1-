@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For You 💖</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        /* LOADING SCREEN */
+        #loading {
+            height: 100vh;
+            width: 100%;
+            background: black;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            font-family: 'Pacifico', cursive;
+            font-size: 32px;
+        }
+
+        #loading img {
+            width: 100px;
+            margin-top: 20px;
+        }
+
+        /* LETTER SCREEN */
+        #letter {
+            display: none;
+            min-height: 100vh;
+            width: 100%;
+
+            background:#ffe6f0 ;
+
+            font-family: 'Dancing Script', cursive;
+            padding: 20px;
+
+            overflow-y: auto; /* IMPORTANT for mobile scrolling */
+        }
+
+        .letter-box {
+            background: rgba(255,255,255,0.85);
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 600px;
+            margin: auto;
+
+            font-size: 18px; /* smaller + clear */
+            line-height: 1.6;
+        }
+
+        /* NEXT BUTTON */
+        .next-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 12px 28px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ff1493;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e01284;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- LOADING -->
+<div id="loading">
+    Loading...
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUyZWd2aGYwbnA0d3gzcWR6Z2ZueG51ZnFyYzFicXZjcTVhaGtpdHkxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oiwKNY1fVAi7rQUXSv/giphy.gif">
+</div>
+
+<!-- LETTER -->
+<div id="letter">
+    <div class="letter-box">
+
+        <b>Letter :</b><br><br>
+
+        Happy Birthday Mental🐼<br>
+        I hope u will be happy forever 😁<br><br>
+
+        Mari intha english enduk le nekuu 😅<br>
+        But anyways chala unexpected ga vachav na life loki chala happy unta nitho☺️  
+        Nitho matladithe anni share cheskunte chal baga anipistadi naku.<br><br>
+
+        Asalu time ae teledu nitho matladutu unte ☺️☺️<br><br>
+
+        Edo konchem manchi matalu Cheppa kada ani ekuva emotional aipokuu  
+        Edo birthday kada ani chepa anthe 😅 🤭😂 but nijamele 😁😁<br><br>
+
+        Kani enni cheppina Naku matram ninnu edpinchadam  
+        nuv nanu bratimaldam antene chal istam 😁 🤭😂<br><br>
+
+        Aina naku telsu nuvvu nalanti "cute caring intelligent friend"  
+        unanduku chala lucky ga feel avtunav ani nak telusu 😌😎  
+        kabati ilane na dagra bratimaladtu natho elane eppatiki undalani hoping 😁<br><br>
+
+        Sarle letter length baga ekuva aipothundi inkanchale 😅<br><br>
+
+        And once again<br>
+        Happiest Birthday Mujjjuuu 💖💖<br><br>
+
+        From ur<br>
+        Ayra☺️
+
+        <!-- NEXT BUTTON -->
+        <div class="next-btn">
+            <button onclick="nextPage()">Next ➡</button>
+        </div>
+
+    </div>
+</div>
+
+<script>
+setTimeout(() => {
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("letter").style.display = "block";
+}, 3000);
+
+function nextPage() {
+    window.location.href = "end.html"; // you can define this later
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memories 💖</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+
+            background: #ffe6f0;
+
+            font-family: 'Great Vibes', cursive;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 65px;
+            margin-top: 30px;
+        }
+
+        /* BIGGER RECTANGLES */
+        .memory {
+            position: absolute;
+            width: 200px;
+            height: 260px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* 4 SEPARATE ONES */
+        .m1 {
+            top: 15%;
+            left: 10%;
+            transform: rotate(-10deg);
+        }
+
+        .m2 {
+            top: 20%;
+            right: 10%;
+            transform: rotate(12deg);
+        }
+
+        .m3 {
+            bottom: 15%;
+            left: 15%;
+            transform: rotate(8deg);
+        }
+
+        .m4 {
+            bottom: 15%;
+            right: 12%;
+            transform: rotate(-12deg);
+        }
+
+        /* 2 OVERLAPPING (CENTER AREA) */
+        .m5 {
+            top: 40%;
+            left: 40%;
+            transform: rotate(-6deg);
+            z-index: 2;
+        }
+
+        .m6 {
+            top: 45%;
+            left: 48%;
+            transform: rotate(10deg);
+            z-index: 3;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(0deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        .memory img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .next-btn {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        button {
+            padding: 12px 28px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ff1493;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e01284;
+        }
+    </style>
+</head>
+
+<body>
+y
+<h1>Memories 💖</h1>
+
+<!-- 6 RECTANGLES -->
+
+<div class="memory m1"><img src="Downloads/add2.jpeg"></div>
+<div class="memory m2"><img src="Downloads/add4.jpeg"></div>
+<div class="memory m3"><img src="Downloads/queen2.jpeg"></div>
+<div class="memory m4"><img src="Downloads/add3.jpeg"></div>
+
+<!-- overlapping ones -->
+<div class="memory m5"><img src="Downloads/neww.jpeg"></div>
+<div class="memory m6"><img src="Downloads/queen.jpeg"></div>
+
+<div class="next-btn">
+    <button onclick="nextPage()">Next ➡</button>
+</div>
+
+<script>
+function nextPage() {
+    window.location.href = "pagee4.html";
+}
+</script>
+
+</body>
+</html>

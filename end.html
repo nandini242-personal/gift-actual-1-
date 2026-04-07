@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Birthday</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Pacifico', cursive;
+  background: #ffe6f0;
+}
+
+/* Happy Birthday */
+#birthdayText {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  color: black;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+/* Center group */
+.gift-group {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Box */
+#giftBox {
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+/* Button */
+#openBtn {
+  margin-top: 10px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Pacifico', cursive;
+}
+
+/* Cake */
+#cake {
+  width: 200px;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(40px) scale(0.8);
+  transition: all 0.7s ease;
+}
+
+/* Message */
+#message {
+  margin-top: 10px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+/* Show animation */
+.show {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+/* Balloons */
+.balloon {
+  position: absolute;
+  bottom: -120px;
+  width: 90px;
+  animation: floatUp 7s infinite ease-in;
+  opacity: 0.9;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(0.9);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.1);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div id="birthdayText">Happy Birthday
+                          ❤️❤️❤️</div>
+
+<div class="gift-group">
+  <img src="Downloads/box.jpeg" id="giftBox"><br>
+  <button id="openBtn">Open</button>
+
+  <img src="Downloads/cake.jpeg" id="cake">
+  <div id="message">You mean a lot🥹🥹</div>
+</div>
+
+<!-- Balloons -->
+<img src="Downloads/ballon.jpeg" class="balloon" style="left:10%;">
+<img src="Downloads/ballon.jpeg" class="balloon" style="left:30%; animation-delay:1s;">
+<img src="Downloads/ballon.jpeg" class="balloon" style="left:50%; animation-delay:2s;">
+<img src="Downloads/ballon.jpeg" class="balloon" style="left:70%; animation-delay:3s;">
+<img src="Downloads/ballon.jpeg" class="balloon" style="left:85%; animation-delay:4s;">
+
+<script>
+document.getElementById("openBtn").onclick = function() {
+  document.getElementById("giftBox").style.display = "none";
+  document.getElementById("openBtn").style.display = "none";
+
+  document.getElementById("cake").classList.add("show");
+  document.getElementById("birthdayText").classList.add("show");
+  document.getElementById("message").classList.add("show");
+};
+</script>
+
+</body>
+</html>

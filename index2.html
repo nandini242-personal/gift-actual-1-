@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For You 💖</title>
+
+    <!-- Gothic font -->
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            /* YOUR BACKGROUND IMAGE */
+            background: url("downloads/background.jpeg") no-repeat center center/cover;
+
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 60px;
+        }
+
+        .option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+            padding: 12px 28px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px; /* curved edges */
+            background-color: #ff1493; /* dark pink */
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e01284;
+        }
+
+        img {
+            width: 90px;
+            margin-bottom: 10px;
+        }
+
+        .title-gif {
+            width: 75px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>
+    <img class="title-gif" src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyeXc5N3Fyb3h2d2tpdjI0dWhpbXp1bXpqN2tvdjF4Mms5M3pwNWZ6aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JoFKJcvTWVTNpxWn7h/giphy.gif">
+    Hello mental....<br>
+    Wanna see something??
+</h1>
+
+<div class="button-container">
+
+    <!-- YES -->
+    <div class="option">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyN3ZpcWpuazUzbXZrZmpxYTExYWVhaXFjY3hkZnZlanhpN2xyd29xOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/osdXLuPrDMTNXUnacY/giphy.gif">
+        <button onclick="yes()">YES</button>
+    </div>
+
+    <!-- NO -->
+    <div class="option">
+        <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyMTM0dWowbW5wOXdyczB2Z3F6dHgwNHNhdnVuMWc1dDBzNXRsZmVwZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WWUSelKQYSRNNYWCNR/giphy.gif">
+        <button onclick="no()">NO</button>
+    </div>
+
+</div>
+
+<script>
+function yes() {
+    window.location.href = "pagee1.html";
+}
+
+function no() {
+    window.location.href = "pagee2,html.html";
+}
+</script>
+
+</body>
+</html>
